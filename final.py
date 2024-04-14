@@ -31,14 +31,14 @@ def show_rules():
 def start_game_2():
     global bg_image_2,score_final
 
-    # root_2 = Toplevel(main)
-    # root_2.title("Hard")
-    # root_2.geometry("1000x600")
-    # window_width_2 = root_2.winfo_screenwidth()
-    # window_height_2 = root_2.winfo_screenheight()
-    # bg_image_2 = Image.open("bg_questions.jpg")
-    # bg_image_2 = bg_image_2.resize((window_width_2, window_height_2))
-    # bg_image_2 = ImageTk.PhotoImage(bg_image_2)
+    root_2 = Toplevel(main)
+    root_2.title("Hard")
+    root_2.geometry("1000x600")
+    window_width_2 = root_2.winfo_screenwidth()
+    window_height_2 = root_2.winfo_screenheight()
+    bg_image_2 = Image.open("bg_questions.jpg")
+    bg_image_2 = bg_image_2.resize((window_width_2, window_height_2))
+    bg_image_2 = ImageTk.PhotoImage(bg_image_2)
 
     bg_label_2 = Label(root_2, image=bg_image_2)
     bg_label_2.place(x=0, y=0, relwidth=1, relheight=1)
